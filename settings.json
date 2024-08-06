@@ -1,0 +1,116 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockType": "SteppableClock",
+  "Vehicles": {
+    "hmcl": {
+      "VehicleType": "PX4Multirotor",
+      "UseSerial": false,
+      "UseTcp": true,
+      "TcpPort": 4560,
+      "ControlIp": "127.0.0.1",
+      "ControlPort": 14590,
+      "UdpIp": "127.0.0.1",
+      "UdpPort": 14600,
+      "LogViewerHostIp": "",
+      "QgcHostIp": "127.0.0.1",
+      "LocalHostIp": "127.0.0.1",
+      "DefaultVehicleState": "Armed",
+      "EnableCollisionPassthrough": false,
+      "EnableCollisions": true,
+      "AllowAPIAlways": true,
+      "RC": {
+        "RemoteControlID": 0,
+        "AllowAPIWhenDisconnected": false
+      },
+      "Sensors": {
+        "imu": {
+          "SensorType": 2,
+          "Enabled": true,
+          "UpdateRate": 100,
+          "X": 0,
+          "Y": 0,
+          "Z": -1
+        },
+        "Magnetometer": {
+          "SensorType": 4,
+          "Enabled": true,
+          "UpdateRate": 30,
+          "X": 0,
+          "Y": 0,
+          "Z": -1
+        },
+        "Barometer": {
+          "SensorType": 1,
+          "Enabled": true,
+          "UpdateRate": 10,
+          "X": 0,
+          "Y": 0,
+          "Z": -1
+        },
+        "Gps": {
+          "SensorType": 3,
+          "Enabled": true,
+          "UpdateRate": 5,
+          "X": 0,
+          "Y": 0,
+          "Z": -1
+        }
+      },
+      "Cameras": {
+        "scene_cam": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 0,
+              "ImageType": 0,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 79.3,
+              "TargetGamma": 1.5,
+              "MotionBlurAmount": 1.0
+            }
+          ],
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 0.1,
+          "Pitch": 0.0,
+          "Roll": 0.0,
+          "Yaw": 0.0
+        },
+        "depth_cam": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 0,
+              "ImageType": 1,
+              "Width": 640,
+              "Height": 480,
+              "FOV_Degrees": 79.3,
+              "TargetGamma": 1.5,
+              "MotionBlurAmount": 1.0,
+              "PixelsAsFloat": true,
+              "Compress": false
+            }
+          ],
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 0.1,
+          "Pitch": 0.0,
+          "Roll": 0.0,
+          "Yaw": 0.0
+        }
+      },
+      "Parameters": {
+        "NAV_RCL_ACT": 0,
+        "NAV_DLL_ACT": 0,
+        "COM_OBL_ACT": 1,
+        "LPE_LAT": 47.641468,
+        "LPE_LON": -122.140165
+      }
+    }
+  },
+   "SubWindows": [
+    {"WindowID": 0, "ImageType": 3, "CameraName": "front_cam", "Visible": true},
+    {"WindowID": 1, "ImageType": 1, "CameraName": "front_cam", "Visible": true},
+    {"WindowID": 2, "ImageType": 5, "CameraName": "bottom_cam", "Visible": true}
+  ]
+}
